@@ -5,7 +5,36 @@ import { useState, useEffect } from 'react'
 import AddTrip from './components/AddTrip'
 
 function App() {
-  const [trips, setTrips] = useState([])
+  const [trips, setTrips] = useState([
+    {
+      "id": 1,
+      "name": "Vacances de rêve à Paris",
+      "description": "Visitez la Tour Eiffel ainsi que le Louvres dans la cité de l'amour.",
+      "price": 1200,
+      "category": "Culture"
+    },
+    {
+      "id": 2,
+      "name": "Vacances de rêve à Londres",
+      "description": "Visitez le Royaume qui conquéri le monde pour ses épices pour ne jamais les utiliser.",
+      "price": 1500,
+      "category": "Culture"
+    },
+    {
+      "id": 3,
+      "name": "Vacances de rêve à Boca Raton",
+      "description": "Soleil, sable et océan de rêve",
+      "price": 2000,
+      "category": "Plage"
+    },
+    {
+      "id": 4,
+      "name": "Vacances de rêve à Montréal",
+      "description": "Visitez la plus grande chaîne de montagnes oranges qui perdure à l'année longue",
+      "price": 5000,
+      "category": "Aventure"
+    }
+  ])
 
   const deleteTrip = async (id) => {
     // await fetch(`http://localhost:5000/trips/${id}`, {
@@ -40,11 +69,11 @@ function App() {
   return (
     <div className="font-sans min-h-screen">
       <NavBar />
-      <div className="container mx-auto p-8 border-2 border-blue-200 mt-16 max-w-screen-md rounded-lg">
+      <div className="container mx-auto p-8 border-2 border-blue-200 mt-16 rounded-lg">
         <Header />
         <AddTrip onAdd={addTrip} />
-        <TripsList trips={trips} onDelete={deleteTrip} />
       </div>
+      <TripsList trips={trips} onDelete={deleteTrip} />
     </div>
   );
 }
