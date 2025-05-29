@@ -1,9 +1,11 @@
 import SingleTrip from './SingleTrip'
 
 const TripsList = ({ trips, onDelete }) => {
+
     return (
         <>
             {trips.length > 0 ? (
+
                 <div className="grid grid-cols-4 gap-6 px-8 py-4">
                     {trips.map((trip) => (
                         <SingleTrip key={trip.id} trip={trip} onDelete={onDelete} />

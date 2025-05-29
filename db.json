@@ -1,32 +1,32 @@
 {
-    "trips": [
-        {
-            "id": 1,
-            "name": "Vacances de rêve à Paris",
-            "description": "Visitez la Tour Eiffel ainsi que le Louvres dans la cité de l'amour.",
-            "price": 1200,
-            "category": "Culture"
-        },
-        {
-            "id": 2,
-            "name": "Vacances de rêve à Londres",
-            "description": "Visitez le Royaume qui conquéri le monde pour ses épices pour ne jamais les utiliser.",
-            "price": 1500,
-            "category": "Culture"
-        },
-        {
-            "id": 3,
-            "name": "Vacances de rêve à Boca Raton",
-            "description": "Soleil, sable et océan de rêve",
-            "price": 2000,
-            "category": "Plage"
-        },
-        {
-            "id": 4,
-            "name": "Vacances de rêve à Montréal",
-            "description": "Visitez la plus grande chaîne de montagnes oranges qui perdure à l'année longue",
-            "price": 5000,
-            "category": "Aventure"
-        }
-    ]
+  "trips": [
+    {
+      "id": "1",
+      "name": "Vacances de rêve à Paris",
+      "description": "Visitez la Tour Eiffel ainsi que le Louvres dans la cité de l'amour.",
+      "price": 1200,
+      "category": "Culture"
+    },
+    {
+      "id": "2",
+      "name": "Vacances de rêve à Londres",
+      "description": "Visitez le Royaume qui conquéri le monde pour ses épices pour ne jamais les utiliser.",
+      "price": 1500,
+      "category": "Culture"
+    },
+    {
+      "id": "3",
+      "name": "Vacances de rêve à Boca Raton",
+      "description": "Soleil, sable et océan de rêve",
+      "price": 2000,
+      "category": "Plage"
+    },
+    {
+      "id": "4",
+      "name": "Vacances de rêve à Montréal",
+      "description": "Visitez la plus grande chaîne de montagnes oranges qui perdure à l'année longue",
+      "price": 5000,
+      "category": "Aventure"
+    }
+  ]
 }
